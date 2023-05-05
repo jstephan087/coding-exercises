@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Bergen Sans Semi";
+  src: url("font/BergenSans-SemiBold.woff2") format("woff2"),
+    url("font/BergenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(90, 90, 90);
+  background-color: rgb(247, 247, 247);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 135ch;
+  padding: 1.5rem 1rem;
+  line-height: 1.4rem;
+}
+
+section {
+  padding: 0.25rem 1rem 1rem;
+}
+
+h1 {
+  font-family: "Bergen Sans Semi", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(26, 26, 26);
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.item-list {
+  border-radius: 1rem;
+  display: grid;
+  background-color: white;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.head-1,
+.head-img,
+.head-img > img {
+  position: relative;
+  margin: 0;
+}
+
+.head-img::before {
+  content: "";
+  z-index: 10;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 5%,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 0.2) 30%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+img {
+  max-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.article-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.7rem;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+  color: rgb(26, 26, 26);
+  line-height: 0.5rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  letter-spacing: 0.02rem;
+}
+
+.photo-by {
+  position: absolute;
+  bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+  z-index: 30;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-info {
+  display: grid;
+}
+
+.product-info > header {
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.item-detail {
+  border-radius: 0.8rem;
+  text-align: center;
+  background-color: rgb(233, 233, 233);
+  align-self: flex-end;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.label {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.price {
+  color: rgb(26, 26, 26);
+  font-weight: 500;
+}
+
+.two-selects {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr 1fr 1fr;
+  justify-items: start;
+}
+
+label {
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+select {
+  border: none;
+  font-family: inherit;
+  padding: 0 0.5rem;
+}
+
+#vpe-select,
+#size-select {
+  background-color: white;
+  width: 3.5rem;
+  border-radius: 0.25rem;
+}
+
+.before-title > label,
+.color > label {
+  text-align: left;
+  line-height: 1rem;
+}
+
+.color {
+  display: flex;
+  grid-gap: 0.7rem;
+  align-items: center;
+}
+
+.color-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+
+.color-circle:focus {
+  outline-color: rgb(119, 119, 119);
+  outline-width: thin;
+  outline-style: solid;
+  outline-offset: 2px;
+  align-self: center;
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+
+.color-circle:hover {
+  transform: scale(1.2);
+  transition: transform 0.25s ease-in-out;
+}
+
+.color-circle:hover:focus {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+
+#blue {
+  background-color: rgb(22, 53, 155);
+}
+
+#red {
+  background-color: rgb(185, 1, 1);
+}
+
+#black {
+  background-color: black;
+}
+
+#green-black {
+  background: linear-gradient(
+    90deg,
+    olive 0%,
+    olive 50%,
+    black 50%,
+    black 100%
+  );
+}
+
+#blue-black {
+  background: linear-gradient(
+    90deg,
+    royalblue 0%,
+    royalblue 50%,
+    black 50%,
+    black 100%
+  );
+}
+
+#pink-black {
+  background: linear-gradient(
+    90deg,
+    mediumvioletred 0%,
+    mediumvioletred 50%,
+    black 50%,
+    black 100%
+  );
+}
+
+#red-white {
+  background: linear-gradient(
+    90deg,
+    rgb(185, 1, 1) 0%,
+    rgb(185, 1, 1) 50%,
+    white 50%,
+    white 100%
+  );
+}
+
+#black-white {
+  background: linear-gradient(
+    90deg,
+    black 0%,
+    black 50%,
+    white 50%,
+    white 100%
+  );
+}
+
+.cart.label {
+  background-color: rgb(22, 53, 155);
+  color: white;
+  margin-top: 1rem;
+  border: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.cart::before {
+  content: "Add to cart";
+}
+
+.cart.label:hover {
+  background-color: rgb(4, 28, 107);
+  transition: background-color 0.25s ease-in-out;
+}

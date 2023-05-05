@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Bergen Sans Semi';
+    src: url('BergenSans-SemiBold.woff2') format('woff2'),
+        url('BergenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bergen Sans';
+    src: url('BergenSans-Regular.woff2') format('woff2'),
+        url('BergenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bergen Sans';
+    src: url('BergenSans-Italic.woff2') format('woff2'),
+        url('BergenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bergen Sans';
+    src: url('BergenSans-BoldItalic.woff2') format('woff2'),
+        url('BergenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bergen Sans';
+    src: url('BergenSans-Bold.woff2') format('woff2'),
+        url('BergenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bergen Sans Semi';
+    src: url('BergenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('BergenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
