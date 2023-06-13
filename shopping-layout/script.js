@@ -9,5 +9,4 @@ wrapper.forEach((article) => {
       shoeImg.src = `./img/${shoeImg.id}_${color.id}.jpg`;
     });
   });
-  return;
 });
